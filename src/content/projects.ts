@@ -1,0 +1,97 @@
+import type { Project } from "@/types/content";
+
+export const projects: Project[] = [
+  {
+    id: "santushti-enclave",
+    slug: "santushti-enclave",
+    name: "Santushti Enclave",
+    location: "Lucknow",
+    status: "Ready for Possession",
+    type: "Plotted Development",
+    tagline: "19 Acres of Eco-Friendly Living",
+    heroImage: "/images/santushti/plotting-banner.webp",
+    featuredImage: "/images/santushti/entrance.webp",
+    thumbnail: "/images/santushti/open-plots.webp",
+    lifestyleImage: "/images/santushti/tree-lined-road.webp",
+    videoUrl: "https://www.youtube.com/embed/2UVMGNhOmMs",
+    published: true,
+    featured: true,
+    overview: "A thoughtfully planned plotted community bringing together open space, essential infrastructure and everyday connectivity—presented by Insync Realty for buyers seeking room to shape their own future.",
+    facts: [
+      { label: "Location", value: "Lucknow" },
+      { label: "Project Type", value: "Plotted Development" },
+      { label: "Area", value: "19 Acres" },
+      { label: "Status", value: "Ready for Possession" },
+      { label: "Road Widths", value: "7.5 m · 9 m · 12 m" },
+      { label: "Approval", value: "LIDA Permit No. 130" },
+    ],
+    pricing: [
+      { label: "7.5 m Wide Road", price: "₹3,299 / sq. ft." },
+      { label: "9 m Wide Road", price: "₹3,299 / sq. ft." },
+      { label: "12 m Wide Road – Semi-Commercial", price: "₹3,499 / sq. ft." },
+    ],
+    plotSizes: [],
+    amenities: [
+      { name: "Secured Gated Community", status: "available", icon: "shield" },
+      { name: "Wide Metalled Roads", status: "available", icon: "route" },
+      { name: "Green Spaces", status: "available", icon: "trees" },
+      { name: "International Standard School", status: "unknown", icon: "school" },
+      { name: "Nursing Home", status: "unknown", icon: "hospital" },
+      { name: "Clubhouse", status: "unknown", icon: "building" },
+      { name: "Electricity", status: "available", icon: "zap" },
+      { name: "Sewer Line", status: "available", icon: "waves" },
+      { name: "4 Parks", status: "available", icon: "flower" },
+      { name: "Shopping Area", status: "unknown", icon: "store" },
+    ],
+    infrastructure: [
+      { name: "Road widths", detail: "7.5 m, 9 m and 12 m", status: "available" },
+      { name: "Electricity", status: "available" },
+      { name: "Sewer line", status: "available" },
+      { name: "Drainage", status: "unknown" },
+      { name: "Street lighting", status: "unknown" },
+      { name: "Green areas", detail: "Four parks listed", status: "available" },
+      { name: "Security", detail: "Gated community", status: "available" },
+    ],
+    gallery: [
+      { src: "/images/santushti/open-plots.webp", category: "Open Plots", alt: "Illustrative view of open green plots beside a landscaped internal road" },
+      { src: "/images/santushti/tree-lined-road.webp", category: "Tree-Lined Roads", alt: "Illustrative internal road with trees, open land and electricity poles" },
+      { src: "/images/santushti/neighbourhood-street.webp", category: "Neighbourhood Setting", alt: "Illustrative streetscape with open plots and an individual home" },
+      { src: "/images/santushti/home-front.webp", category: "Home Inspiration", alt: "Illustrative individual home design; the project offers plots, not built homes" },
+      { src: "/images/santushti/curved-road.webp", category: "Green Surroundings", alt: "Illustrative curved road bordered by trees and green open land" },
+      { src: "/images/santushti/home-corner.webp", category: "Corner Home Inspiration", alt: "Illustrative corner home design, shown as inspiration for a future build" },
+      { src: "/images/santushti/home-garden.webp", category: "Garden Home Inspiration", alt: "Illustrative home and garden design, shown as inspiration for a future build" },
+    ],
+    connectivity: [
+      { place: "Lucknow Airport", distance: "6 km" },
+      { place: "Apollo Hospital", distance: "8 km" },
+      { place: "Scooter India", distance: "3.5 km" },
+      { place: "Outer Ring Road", distance: "800 m" },
+    ],
+    documents: [],
+    financePartners: [],
+    directionsUrl: "https://maps.app.goo.gl/PJ978xwRYWeFaL1Q8",
+    legal: {
+      marketingCompany: "Insync Realty",
+      approvalNumber: "LIDA Permit No. 130",
+      disclaimer: "Insync Realty presents and markets the project. Promoter, developer, RERA and other legal relationship details are pending client confirmation. Buyers should independently verify approvals, title, layout and current terms before purchase.",
+    },
+    faq: [
+      { question: "Where is Santushti Enclave located?", answer: "Santushti Enclave is located in Lucknow. Contact our team or use the directions link for the current site location." },
+      { question: "What type of plots are available?", answer: "Current plot sizes and availability change over time. Please contact our sales team for the latest inventory." },
+      { question: "What are the current plot rates?", answer: "Listed rates are ₹3,299 per sq. ft. along 7.5 m and 9 m roads, and ₹3,499 per sq. ft. for semi-commercial plots along the 12 m road. Prices and charges are subject to change." },
+      { question: "Is the project ready for possession?", answer: "The current project information describes Santushti Enclave as ready for possession. Please verify the status for your preferred plot during your site visit." },
+      { question: "What road widths are available?", answer: "The listed internal road widths are 7.5 m, 9 m and 12 m." },
+      { question: "What amenities are planned or available?", answer: "The project lists a gated community, metalled roads, green spaces, electricity, sewer line and four parks. The current status of other listed amenities should be confirmed with the sales team." },
+      { question: "How can I schedule a site visit?", answer: "Submit the site-visit form on this page or contact Insync Realty by phone or WhatsApp." },
+      { question: "Is financing available?", answer: "Finance partners are not currently listed. Please contact the sales team for current financing information." },
+    ],
+    seo: {
+      title: "Santushti Enclave Lucknow | Plots by Insync Realty",
+      description: "Explore Santushti Enclave, a 19-acre plotted development in Lucknow with ready-for-possession status, road options, amenities and connectivity details.",
+    },
+  },
+];
+
+export const publishedProjects = projects.filter((project) => project.published);
+export const featuredProjects = publishedProjects.filter((project) => project.featured);
+export const getProject = (slug: string) => publishedProjects.find((project) => project.slug === slug);

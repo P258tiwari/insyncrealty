@@ -1,0 +1,3 @@
+"use client";
+import { Button } from "@/components/shared/Button";
+export default function ErrorPage({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <section className="dark flex min-h-[80vh] items-center pb-24 pt-40"><div className="container-site"><p className="eyebrow mb-8 text-[#3084C2]">Something Went Wrong</p><h1 className="display-lg">We couldn’t load this page.</h1><p className="mt-7 max-w-lg text-white/60">Please try once more. If the problem continues, return to the homepage.</p><div className="mt-9 flex gap-3"><Button onClick={reset} variant="secondary">Try Again</Button><Button href="/" variant="outline">Home</Button></div></div></section>; }

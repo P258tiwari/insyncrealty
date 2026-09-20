@@ -1,0 +1,10 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1100" fill="#173966"/>
+  <circle cx="1300" cy="-20" r="560" fill="#0B5C46"/>
+  <circle cx="280" cy="1000" r="530" fill="#0A493A"/>
+  <path d="M0 885C210 772 384 774 577 842C769 910 987 929 1600 665V1100H0V885Z" fill="#EAF0F7" fill-opacity=".12"/>
+  <path d="M0 944C294 820 500 938 744 930C1006 921 1206 759 1600 750" stroke="#3084C2" stroke-opacity=".55" stroke-width="2"/>
+  <g opacity=".3" stroke="#F7F9FC" stroke-width="2"><path d="M102 287h493v316H102z"/><path d="m102 287 247-140 246 140M260 603V376h177v227"/></g>
+  <text x="110" y="770" fill="#F7F9FC" font-family="Georgia, serif" font-size="88">Santushti Enclave</text>
+  <text x="115" y="830" fill="#3084C2" font-family="Arial, sans-serif" font-size="22" letter-spacing="7">PROJECT IMAGE PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,5 @@
+import Link from "next/link";
+
+export function LegalPage({ eyebrow, title, updated = "8 September 2026", children }: { eyebrow: string; title: string; updated?: string; children: React.ReactNode }) { return <article><header className="bg-[#EAF0F7] pb-20 pt-44"><div className="container-site max-w-4xl"><p className="eyebrow mb-8">{eyebrow}</p><h1 className="display-xl">{title}</h1><p className="mt-8 text-sm text-[#52647B]">Last updated: {updated} · This draft requires review by the company’s legal counsel.</p></div></header><div className="container-site section-pad max-w-4xl"><div className="space-y-10 text-base leading-8 text-[#52647B]">{children}</div><div className="mt-14 border-t fine-rule pt-8"><Link prefetch={false} href="/contact" className="text-sm font-bold text-[#236A9E]">Questions? Contact Insync Realty →</Link></div></div></article>; }
+
+export function LegalSection({ title, children }: { title: string; children: React.ReactNode }) { return <section><h2 className="font-display mb-4 text-4xl text-[#182C49]">{title}</h2><div className="space-y-3">{children}</div></section>; }
