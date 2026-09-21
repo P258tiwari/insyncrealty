@@ -29,6 +29,7 @@ export interface Project {
   videoUrl?: string;
   brochureUrl?: string;
   directionsUrl?: string;
+  locationPlan?: { src: string; width: number; height: number; alt: string };
   legal: {
     promoter?: string;
     developer?: string;

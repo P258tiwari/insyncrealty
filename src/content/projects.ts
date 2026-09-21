@@ -11,6 +11,7 @@ export const projects: Project[] = [
     tagline: "19 Acres of Eco-Friendly Living",
     heroImage: "/images/santushti/plotting-banner.webp",
     featuredImage: "/images/santushti/entrance.webp",
+    locationPlan: { src: "/images/santushti/location-plan.webp", width: 1182, height: 1330, alt: "Santushti Enclave schematic location plan showing Kanpur Road NH-25, Alambagh Chauraha, Lucknow Airport, Bijnaur Road and the project beside Study Hall School." },
     thumbnail: "/images/santushti/open-plots.webp",
     lifestyleImage: "/images/santushti/tree-lined-road.webp",
     videoUrl: "https://www.youtube.com/embed/2UVMGNhOmMs",
