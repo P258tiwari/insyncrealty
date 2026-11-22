@@ -22,6 +22,12 @@ test("Indian phone normalization and strict validation", () => {
   assert.equal(formSchema.safeParse({ ...values, fullName: "" }).success, false);
   assert.equal(leadSchema.safeParse({ ...payload(), unexpected: "x" }).success, false);
 });
+test("direct visits (empty referrer) are accepted and bad URLs are rejected without throwing", async () => {
+  assert.equal(leadSchema.safeParse({ ...payload(), referrer: "" }).success, true);
+  assert.equal(leadSchema.safeParse({ ...payload(), referrer: "not a url" }).success, false);
+  assert.equal(leadSchema.safeParse({ ...payload(), sourcePage: "" }).success, false);
+  assert.equal((await handleLead(request({ ...payload(), referrer: "" }), deps())).status, 200);
+});
 test("signed time trap rejects quick, expired, future and tampered tokens", () => {
   assert.equal(validFormToken(makeFormToken()), false);
   assert.equal(validFormToken(makeFormToken(Date.now() - 2000)), true);

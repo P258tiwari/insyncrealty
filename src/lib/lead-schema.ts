@@ -15,7 +15,9 @@ export const formSchema = z.object({
   message: text(1500), website: text(100),
 });
 export type FormValues = z.infer<typeof formSchema>;
-const pageUrl = z.string().max(2048).url().refine(v => ["http:", "https:"].includes(new URL(v).protocol));
+// Zod 4 still runs this refine when .url() has already failed (e.g. an empty referrer on direct visits), so it must not throw.
+const httpUrl = (v: string) => { try { return ["http:", "https:"].includes(new URL(v).protocol); } catch { return false; } };
+const pageUrl = z.string().max(2048).url().refine(httpUrl);
 export const leadSchema = formSchema.extend({
   project: optional(100), city: optional(100),
   sourcePage: pageUrl, referrer: pageUrl.or(z.literal("")).default(""),
